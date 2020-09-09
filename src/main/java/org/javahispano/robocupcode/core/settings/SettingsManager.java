@@ -61,6 +61,18 @@ public class SettingsManager implements ISettingsManager {
 
 	}
 	
+	@Override
+	public int getMatchDefaultMatchfieldWidth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getMatchDefaultMatchfieldHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 	private void notifyPropertyChanged(String name) {
 		for (ISettingsListener listener : listeners) {
 			try {
@@ -107,6 +119,5 @@ public class SettingsManager implements ISettingsManager {
 			}
 			return res;
 		}
-	}
-	
+	}	
 }

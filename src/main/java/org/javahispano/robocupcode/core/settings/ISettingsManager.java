@@ -32,4 +32,8 @@ public interface ISettingsManager {
 		MATCHFIELD_WIDTH = "robocupcode.matchField.width",
 		MATCHFIELD_HEIGHT = "robocupcode.matchField.height",
 		MATCH_INITIAL_POSITIONS = "robocupcode.match.initialPositions";
+
+	int getMatchDefaultMatchfieldWidth();
+
+	int getMatchDefaultMatchfieldHeight();
 }
