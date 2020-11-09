@@ -13,20 +13,17 @@
  * which accompanies this distribution, and is available at
  * https://robocode.sourceforge.io/license/epl-v10.html
  */
-package org.javahispano.robocupcode.api.security;
-
-import java.awt.Graphics2D;
-
-import org.javahispano.robocupcode.api.peer.IRobotStatics;	
+package org.javahispano.robocupcode.api.peer;
 
 /**
  * @author Pavel Savara (original)
  */
-public interface IHiddenEventHelper {
-	void setDefaultPriority(Event event);
-	void setPriority(Event event, int newPriority);
-	void setTime(Event event, long newTime);
-	boolean isCriticalEvent(Event event);
-	void dispatch(Event event, IBasicRobot robot, IRobotStatics statics, Graphics2D graphics);
-	byte getSerializationType(Event event);
+public interface IRobotStatics {
+	boolean isInteractiveRobot();
+
+	boolean isPaintRobot();
+
+	boolean isAdvancedRobot();
+
+	boolean isTeamRobot();
 }

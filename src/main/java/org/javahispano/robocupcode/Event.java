@@ -19,6 +19,7 @@ import java.awt.Graphics2D;
 import java.io.Serializable;
 
 import org.javahispano.robocupcode.api.io.Logger;
+import org.javahispano.robocupcode.api.peer.IRobotStatics;
 import org.javahispano.robocupcode.api.security.IHiddenEventHelper;
 
 /**
